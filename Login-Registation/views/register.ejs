@@ -1,17 +1,54 @@
-<h1>Register</h1>
-<form action="/register" method="POST">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIT Contest</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <script src="https://kit.fontawesome.com/0c31228caf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Login</h1>
+<% if (messages.error) { %>
+  <%= messages.error %>
+<% } %>
+<section id="header">
+  <a href="#" style="font-family: fantasy; font-size: 30px; color:orange;" > 
+      <i class="fa-solid fa-microchip"> KDL GANG</i>
+  </a>
   <div>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+      <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="Chatbot-main/chatbot.html">Chat bot </a></li>
+          <li><a href="http://localhost:3000/login">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href=""><i class="fa-solid fa-robot"></i></a></li>
+
+      </ul>
   </div>
-  <div>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <div>
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
-  </div>
-  <button type="submit">Register</button>
-</form>
-<a href="/login">Login</a>
+
+  <h1>Register</h1>
+  <form action="/register" method="POST">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+  <a href="/login">Login</a>
+
+  
+  
+  
+</body>
+</html>

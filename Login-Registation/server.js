@@ -29,6 +29,7 @@ if (process.env.NODE_ENV !== 'production') {
     resave: false,
     saveUninitialized: false
   }))
+  
   app.use(passport.initialize())
   app.use(passport.session())
   app.use(methodOverride('_method'))
