@@ -68,7 +68,7 @@ const alternative = [
   "Bro...",
   "Try again",
   "I'm listening...",
-  "I don't understand :/"
+  "I don't understand :/ I don't understand :/I don't understand :/I don't understand :/I don't understand :/ "
 ]
 const robot = ["How do you do, fellow human", "I am not a bot"];
 msgerForm.addEventListener("submit", event => {

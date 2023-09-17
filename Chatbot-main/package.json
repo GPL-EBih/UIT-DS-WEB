@@ -1,0 +1,15 @@
+{
+  "name": "chatbot-main",
+  "version": "1.0.0",
+  "description": "ChatBot using html css js Hosted with ❤ by GitHub",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dialogflow": "^1.2.0"
+  },
+  "keywords": []
+}

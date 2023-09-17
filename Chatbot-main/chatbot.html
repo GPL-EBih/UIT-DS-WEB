@@ -33,19 +33,14 @@
 <!-- main -->
 
     <section class="msger" style="background-color: #181818;">
-        <header class="msger-header">
-          <div class="msger-header-title">
-            <img src="robot.png" alt="" srcset="">
-            <p>ChatBot</p>
-          </div>
-        </header>
+
         <main class="msger-chat">
-          <div class="msg left-msg">
+          <!-- <div class="msg left-msg">
             <div
              class="msg-img"
              style="background-image: url(bot.png)"
             ></div>
-            <div class="msg-bubble">
+            <div class="msg-bubble" style=" margin-top: 100px ;">
               <div class="msg-info">
                 <div class="msg-info-name">BOT</div>
                 <div class="msg-info-time">12:45</div>
@@ -70,13 +65,42 @@
                 Hello
               </div>
             </div>
-          </div>
+          </div> -->
+
+          <div class="container">
+            <img src="assets/cat.png">
+            <input type="text" id="input-field" placeholder="Milk">
+            <button id="add-button">Add to cart</button>
+            <ul id="shopping-list">
+            </ul>
+        </div>
+        <script src="index.js" type="module"></script>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+        <df-messenger
+        location="asia-southeast1"
+        agent-id="94d2781f-ae8c-430e-bc14-73e4d6ff5286"
+        language-code="vi">
+        <df-messenger-chat-bubble
+        chat-title="ResolveMate"
+        bot-writing-text="..."
+        placeholder-text="PLACEHOLDER_TEXT">
+        </df-messenger-chat-bubble>
+        </df-messenger>
+        <style>
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+        }
+        </style>
         </main> 
+      </section>
         <form class="msger-inputarea">
           <input type="text" class="msger-input" placeholder="Enter your message...">
           <button type="submit" class="msger-send-btn"><i class="fa fa-paper-plane"></i></button>
         </form>
-      </section>
+      
 
       <script src="main.js"></script>
 </body>
