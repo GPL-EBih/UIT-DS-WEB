@@ -8,18 +8,18 @@
 h1{
     font-size: 40px;
     line-height: 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 h2{
     font-size: 20px;
     line-height: 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 h4{
     font-size: 15px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 h6{
@@ -29,12 +29,12 @@ h6{
 
 p {
     font-size: 16px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     margin: 40px 80px;
 }
 
 .section-p1{
-    padding: 40px 80px;
+    padding: 10px 10px;
 }
 
 .section-m1{
@@ -53,7 +53,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgb(5,108,242);
+    background: #0071dc;
     box-shadow: rgb(0, 0, 0);
     z-index: 999;
     position: sticky;
@@ -93,7 +93,7 @@ body{
     content:"";
     width: 30%;
     height: 2px;
-    background-color: orange;
+    background-color:  orange;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -132,30 +132,65 @@ body{
 
 } */
 
+
+
+
+
+.main-container-header{
+    display: grid;
+    grid-template-areas: 'top-left top-right' 'bottom-left bottom-right';
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+
+.small-frame{
+    background-color: #91D0F7;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: white;
+    border: 10px;
+}
+
+.top-left-frame{
+    grid-area: top-left;
+}
+
+.top-right-frame{
+    grid-area: top-right;
+}
+
+.bottom-left-frame{
+    grid-area: bottom-left;
+}
+
+.bottom-right-frame{
+    grid-area: bottom-right;
+}
+
 .container-header {
-    background-color: rgb(5, 108, 242);
+    background-color: #ffffff;
     display: flex;
   }
   
   .right-content {
     flex: 1;
-    padding: 20px;
-    background-image: url(image/robot/1.png);
+    padding: 17%;
+  
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
+    border-radius: 10px;
+    background-color: #F6F6F6 ;
+    margin: 10px 0px 4px 10px;
+   
+
   }
   
   #hero {
-    height: 90vh;
-    width: 100%;
-    padding: 0 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex: 1;
-    padding: 20px;
+
+display: flex;
+margin: 10px 10px;
   }
 
 #hero h4{
@@ -163,13 +198,13 @@ body{
 }
 
 #hero h1{
-    color:orange;
+    color:#ffc220;
 }
 
 #hero button{
     background-image: url("/image/button/button.png");
     background-color: transparent;
-    color: orange;
+    color:orange;
     border: 0;
     padding: 14px 80px 14px 65px;
     background-repeat:  no-repeat;
@@ -192,7 +227,7 @@ body{
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
-    border: 1px solid orange;
+    border: 1px solidorange;
     border-radius: 4px;
     margin: 15px 0 ;
 
@@ -213,12 +248,12 @@ body{
     padding: 9px 8px 6px 8px;
     line-height: 1;
     border-radius: 4px;
-    color: orange;
-    background-color: orange;
+    color:orange;
+    background-color:orange;
 }
 
 #feature .fe-box h6:nth-child(2){
-    background-color: orange;
+    background-color:orange;
 } */
 
 #feature {
@@ -258,12 +293,12 @@ body{
     padding: 9px 8px 6px 8px;
     line-height: 1;
     border-radius: 4px;
-    color: orange;
-    background-color: orange;
+    color:orange;
+    background-color:orange;
  }
  
  .fe-box h6:nth-child(2) {
-    background-color: orange;
+    background-color:orange;
  }
 
 
@@ -293,17 +328,18 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
  }
  
  .fe-container-connect {
     display: flex;
-    gap: 30px;
+    gap: 10px;
  }
  
  .fe-box-connect {
     flex: 1;
     background-color: white;
-    padding: 25px 15px;
+    padding: 0px 10px;
     box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
     border: 1px solid rgb(174, 174, 174);
     border-radius: 10px;
@@ -325,7 +361,7 @@ body{
 .container-news {
     display: flex;
     align-items: flex-start;
-    gap: 20px; /* Khoảng cách giữa nội dung bảng và hình ảnh */
+    gap: 10px; /* Khoảng cách giữa nội dung bảng và hình ảnh */
   }
   
   .table-content-news {
@@ -340,7 +376,7 @@ body{
   
   .image-content-news {
     flex-shrink: 0;
-    max-width: 100%;
+    max-width: auto;
   }
   
   .image-content-news img {
@@ -385,7 +421,7 @@ body{
     width: 100%;
     position: relative;
     height: auto;
-    background-color: #070617;
+    background-color: #004f9a;
   }
   .footer .col {
     width: 190px;
