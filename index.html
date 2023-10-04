@@ -13,7 +13,9 @@
   </head>
 <body>
 
-
+<script>
+  localStorage.clear();
+</script>
 
     <section id="header">
         <a href="#" style="font-family: fantasy; font-size: 30px; color:orange;" > 
@@ -57,6 +59,7 @@
         
           // FUNCTIONS
           function getUsername() {
+
             let keepLoggedIn = localStorage.getItem("keepLoggedIn");
         
             if (keepLoggedIn == "yes") {
@@ -104,7 +107,25 @@
         </script>
     </section>
 
-    <section class="container-header">
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+          var tableContent = document.querySelector('#hero');
+          var imageContent = document.querySelector('.right-content');
+          var image = imageContent.querySelector('img');
+  
+          function setImageSize() {
+              var tableWidth = tableContent.offsetWidth;
+              image.style.width = tableWidth + 'px';
+          }
+  
+          setImageSize();
+  
+          window.addEventListener('resize', setImageSize);
+      });
+  </script>
+  
+    <section class="container-header" style="margin: 0 20px 0 20px ;">
         <div id="hero">
             
           
@@ -128,47 +149,78 @@
               </h6>
           </div>
 
-          </div>
+        </div>
 
 
-        <div class="right-content" style="background-image: url(image/robot/1.png);"> </div>
+        <div class="right-content" style="background-image: url(image/robot/1.png);"> 
+          
+          
+        </div>
 
 
     </section>
 
-    <div style="padding-top: 30px; border-radius: 10px; background-color: #F2F8FD; margin: 10px 10px" >
-        <h1 style=" text-align: center; color: black;">Advanced AI Technology</h1>
-        <p style="text-align: center; color: black;">Our chatbot robots use the latest artificial intelligence technology to understand and respond to customer inquiries, providing accurate and efficent assistance</p>
+
+
+
+    <div style="padding-top: 30px; border-radius: 10px; background-color: #F2F8FD; margin: 0 30px 0 30px; " >
+        <h1 style=" text-align: center; color: black;">Tính năng</h1>
+        <p style="text-align: center; color: black;">Các robot trò chuyện của chúng tôi sử dụng công nghệ trí tuệ nhân tạo mới nhất để hiểu và đáp ứng các yêu cầu của khách hàng, mang lại sự hỗ trợ chính xác và hiệu quả.</p>
         <p style="text-align: center; color: black; line-height: -10px"> </p>
     </div>
 
-    <section id="feature" class="section-p1" style="background-color: #FFF1E1; border-radius: 10px; margin: 10px 10px;">
-        <div class="fe-container"> 
-           <div class="fe-box">
-              <h6 style="color: white;">Feature 1</h6>
-           </div>
-           <div class="fe-box">
-              <h6 style="color: white;">Feature 2</h6>
-           </div>
-           <div class="fe-box">
-              <h6 style="color: white;">Feature 3</h6>
-           </div>
+
+     <section class="feature-section" style="background-color: #FFF1E1; border-radius: 10px; margin: 10px 30px 10px 30px;">
+      <div class="robot-image">
+        <img src="image/robot/2.png" alt="">
+      </div>
+      <div class="feature-container">
+        <div class="feature-box" onmouseover="showFeatureInfo(this)" onmouseout="hideFeatureInfo(this)">
+          <h6 class="feature-title">Tiết kiệm thời gian</h6>
+          <div class="feature-info">
+            <p>Chatbot giúp bạn tiết kiệm thời gian quý báu khi báo cáo khiếu nại. Thay vì phải gọi điện thoại, viết email hoặc đến trực tiếp để báo cáo khiếu nại, bạn chỉ cần trò chuyện với chatbot một cách nhanh chóng và tiện lợi.</p>
+          </div>
         </div>
-        <div>
-           <img src="image/robot/2.png" alt="">
+
+        <div class="feature-box" onmouseover="showFeatureInfo(this)" onmouseout="hideFeatureInfo(this)">
+          <h6 class="feature-title">Tính tức thì </h6>
+          <div class="feature-info">
+            <p> Chatbot đáp ứng ngay lập tức và cung cấp hướng dẫn tức thì. Bạn không cần phải chờ đợi lâu để nhận được câu trả lời hoặc hướng dẫn, giúp bạn tiếp cận giải pháp nhanh chóng.</p>
+          </div>
         </div>
-        <div class="fe-container">
-           <div class="fe-box">
-              <h6 style="color: white;">Feature 4</h6>
-           </div>
-           <div class="fe-box">
-              <h6 style="color: white;">Feature 5</h6>
-           </div>
-           <div class="fe-box">
-              <h6 style="color: white;">Feature 6</h6>
-           </div>
+
+        <div class="feature-box" onmouseover="showFeatureInfo(this)" onmouseout="hideFeatureInfo(this)">
+          <h6 class="feature-title">Dễ sử dụng</h6>
+          <div class="feature-info">
+            <p>Chatbot được thiết kế để đơn giản và dễ sử dụng. Bạn không cần có kiến thức kỹ thuật đặc biệt hay kinh nghiệm trước đây để tương tác với chatbot. Nó đáp ứng tự nhiên và dễ dàng hiểu câu hỏi và yêu cầu của bạn.</p>
+          </div>
         </div>
-     </section>
+
+        <div class="feature-box" onmouseover="showFeatureInfo(this)" onmouseout="hideFeatureInfo(this)">
+          <h6 class="feature-title">Đa ngôn ngữ</h6>
+          <div class="feature-info">
+            <p>Chatbot có khả năng hỗ trợ đa ngôn ngữ, giúp bạn giao tiếp một cách thuận tiện bằng ngôn ngữ mà bạn thoải mái sử dụng.</p>
+          </div>
+        </div>
+
+        <div class="feature-box" onmouseover="showFeatureInfo(this)" onmouseout="hideFeatureInfo(this)">
+          <h6 class="feature-title">Tính linh hoạt </h6>
+          <div class="feature-info">
+            <p>Chatbot có thể được truy cập từ bất kỳ thiết bị nào có kết nối internet, bao gồm cả máy tính, điện thoại di động và máy tính bảng. Điều này cho phép bạn sử dụng chatbot bất cứ khi nào và ở bất kỳ đâu bạn muốn.</p>
+          </div>
+        </div>
+
+        <div class="feature-box" onmouseover="showFeatureInfo(this)" onmouseout="hideFeatureInfo(this)">
+          <h6 class="feature-title">Bảo mật thông tin</h6>
+          <div class="feature-info">
+            <p>Chatbot đảm bảo tính bảo mật của thông tin cá nhân và khiếu nại của bạn. Dữ liệu được xử lý một cách an toàn và tuân thủ các quy định bảo mật hiện hành.</p>
+          </div>
+        </div>
+
+
+        <!-- Các feature box khác -->
+      </div>
+    </section>
     </section>
 
    
@@ -177,54 +229,101 @@
 
 
 
-    <div style="padding-top: 10px; border-radius: 10px; background-color: #F2F8FD; margin: 10px 10px" >
-        <h1 style=" text-align: center; color: black;">Stay Connected on All Channels</h1>
-        <p style="text-align: center; color: black; margin: 0; padding-bottom: 10px;" >Keep your customers happy by being available on their preferred channels. Intergrate BotResponse with various platforms for seamless communication </p>
-
-    </div>
-
-    <section id="feature-connect" class="section-p1">
-        <div class="fe-container-connect">
-           <div class="fe-box-connect">
-            <i class="fa-regular fa-message" style="color: #015cf9; padding-top: 5%; "></i>
-            <h2 style="color: black;">Website</h2>
-              <h6>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. It is a branch of computer science that aims to create intelligent machines capable of performing tasks that typically require human intelligence.</h6>
-                
-            </div>
-           <div class="fe-box-connect">
-            <i class="fa-solid fa-envelope" style="color: #005eff; padding-top: 5%;"></i>
-            <h2 style="color: black;">Machine learning</h2>
-              <h6>AI encompasses various subfields such as machine learning, natural language processing, computer vision, and robotics. With advancements in AI, machines can analyze data, recognize patterns, make decisions, and even interact with humans in a natural and human-like manner.</h6>
-           </div>
-           <div class="fe-box-connect">
-            <i class="fa-solid fa-inbox" style="color: #005eff; padding-top: 5%;"></i>
-              <h2 style="color: black;">Revolution</h2>
-              <h6>AI has revolutionized many industries and sectors, including healthcare, finance, transportation, and entertainment. In healthcare, AI algorithms can assist in diagnosing diseases, predicting patient outcomes, and discovering new treatments.</h6>
-           </div>
-        </div>
-     </section>
-
-     <section>
-        <div class="container-news">
-            
-            <div class="table-content-news" style="background-color: #F6F6F6; margin: 10px 10px; border-radius: 10px;">
-                <h1 style="color: black; padding-left: 10%;">Robot news</h1>
-              <hr>
-              <p style="color: black;">Chatbot Technology Revolutionizing Customer Service" - Chatbots have become a game-changer in customer service, providing quick and efficient support to customers</p>
-              <hr>
-              <p style="color: black;">Companies are increasingly adopting chatbot technology to enhance their customer service capabilities and improve customer satisfaction.</p>
-              <hr>
-              <p style="color: black;">AI-Powered Chatbots Transforming Business Communications" - Artificial Intelligence (AI) powered chatbots are revolutionizing business communications by automating interactions with customers, employees, and partners. </p>
-              <hr>
-              <p style="color: black;">These intelligent chatbots can handle inquiries, provide personalized recommendations, and streamline various business processes.
-
-              </p>
-            </div>
-            <div class="image-content-news" style="background-color: #015cf9; border-radius: 10px; margin: 10px 10px;">
-              <img src="image/robot/4.png" alt="Hình ảnh">
-            </div>
+    <div style="padding-top: 10px; border-radius: 10px; background-color: #F2F8FD; margin:  10px 30px 10px 30px" >
+      <h1 style=" text-align: center; color: black;">Luôn Kết Nối trên Tất cả Các Kênh</h1>
+      <p style="text-align: center; color: black; margin: 0; padding-bottom: 10px;" >Để khách hàng của bạn hài lòng bằng cách có mặt trên các kênh ưa thích của họ. Tích hợp BotResponse với các nền tảng khác nhau để giao tiếp mượt mà</p>
+  </div>
+  
+  <section id="feature-connect" class="section-p1" style="margin: 10px 30px 10px 30px;">
+      <div class="fe-container-connect">
+          <div class="fe-box-connect">
+              <i class="fa-regular fa-message" style="color: #015cf9; padding-top: 5%; "></i>
+              <h2 style="color: black;">Website</h2>
+              <h6>Trí tuệ Nhân tạo (AI) đề cập đến việc mô phỏng trí tuệ con người trong các máy được lập trình để suy nghĩ và học tập giống như con người. Đây là một nhánh của khoa học máy tính nhằm tạo ra các máy thông minh có khả năng thực hiện các nhiệm vụ thường yêu cầu trí tuệ con người.</h6>
           </div>
-     </section>
+          <div class="fe-box-connect">
+              <i class="fa-solid fa-envelope" style="color: #005eff; padding-top: 5%;"></i>
+              <h2 style="color: black;">Học máy</h2>
+              <h6>AI bao gồm nhiều lĩnh vực con như học máy, xử lý ngôn ngữ tự nhiên, thị giác máy tính và robot. Với sự tiến bộ trong AI, máy móc có thể phân tích dữ liệu, nhận biết mẫu, đưa ra quyết định và thậm chí tương tác với con người một cách tự nhiên và giống con người.</h6>
+          </div>
+          <div class="fe-box-connect">
+              <i class="fa-solid fa-inbox" style="color: #005eff; padding-top: 5%;"></i>
+              <h2 style="color: black;">Cách mạng</h2>
+              <h6>AI đã cách mạng hóa nhiều ngành công nghiệp và lĩnh vực, bao gồm y tế, tài chính, giao thông vận tải và giải trí. Trong lĩnh vực y tế, các thuật toán AI có thể hỗ trợ chẩn đoán bệnh, dự đoán kết quả cho bệnh nhân và tìm ra phương pháp điều trị mới.</h6>
+          </div>
+      </div>
+  </section>
+
+  <style>
+    .container-news {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .table-content-news {
+        background-color: #F6F6F6;
+        margin: 10px;
+        border-radius: 10px;
+        text-align: left;
+        width: 60%; /* Adjust the width as needed */
+    }
+
+    .image-content-news {
+        background-color: #015cf9;
+        border-radius: 10px;
+        margin: 10px;
+        width: 60%; /* Adjust the initial width as needed */
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container-news {
+            flex-direction: column;
+        }
+
+        .table-content-news,
+        .image-content-news {
+            width: 100%;
+        }
+    }
+</style>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var tableContent = document.querySelector('.table-content-news');
+        var imageContent = document.querySelector('.image-content-news');
+        var image = imageContent.querySelector('img');
+
+        function setImageSize() {
+            var tableWidth = tableContent.offsetWidth;
+            image.style.width = tableWidth + 'px';
+        }
+
+        setImageSize();
+
+        window.addEventListener('resize', setImageSize);
+    });
+</script>
+
+<section>
+    <div class="container-news" style="margin: 10px 30px 10px 30px;">
+        <div class="table-content-news" style="padding: 0;">
+            <h1>Tin tức</h1>
+            <hr>
+            <p>"Công nghệ Chatbot đang cách mạng hóa Dịch vụ Khách hàng" - Chatbot đã trở thành một yếu tố quan trọng trong dịch vụ khách hàng, cung cấp hỗ trợ nhanh chóng và hiệu quả cho khách hàng.</p>
+            <hr>
+            <p>Các công ty ngày càng áp dụng công nghệ Chatbot để nâng cao khả năng phục vụ khách hàng và cải thiện sự hài lòng của khách hàng.</p>
+            <hr>
+            <p>"Chatbot được Động lực bởi Trí tuệ Nhân tạo (AI) đang biến đổi Truyền thông Doanh nghiệp" - Chatbot được trang bị Trí tuệ Nhân tạo (AI) đang cách mạng hóa truyền thông doanh nghiệp bằng cách tự động hóa giao tiếp với khách hàng, nhân viên và đối tác.</p>
+            <hr>
+            <p>Những chatbot thông minh này có thể xử lý yêu cầu, đưa ra các gợi ý cá nhân hóa và tối ưu hóa các quy trình kinh doanh khác nhau.</p>
+        </div>
+        <div class="image-content-news">
+            <img src="image/robot/4.png" alt="Hình ảnh">
+        </div>
+    </div>
+</section>
+  <!-- </section>
     
      <div style="padding-top: 30px;" >
         <h1 style=" text-align: center; color: black;">Hear from Our customers</h1>
@@ -252,7 +351,7 @@
               </div>
             </div>
           </section>
-    </section>
+    </section> -->
 
 
      <section>
@@ -321,36 +420,56 @@
      </section>
 
      
-        <script src="index.js" type="module"></script>
-        <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-        <df-messenger
-        location="asia-southeast1"
-        agent-id="94d2781f-ae8c-430e-bc14-73e4d6ff5286"
-        language-code="vi"  >
-        <df-messenger-chat-bubble
-        chat-title="ResolveMate"
-        bot-writing-text="..."
-        placeholder-text="PLACEHOLDER_TEXT">
-        </df-messenger-chat-bubble>
-        </df-messenger>
-        <style>
-        df-messenger {
-            z-index: 999;
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            justify-content: right;
-
-        }
-        </style> 
-        </main> 
-      </section>
-
-
-
-    <script>
+     <script>
+      window.addEventListener('DOMContentLoaded', function() {
+          var keepLoggedIn = sessionStorage.getItem('user');
+  
+          if (keepLoggedIn !== null) {
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js';
+  
+              var dfMessengerElement = document.createElement('df-messenger');
+              dfMessengerElement.setAttribute('location', 'asia-southeast1');
+              dfMessengerElement.setAttribute('project-id', 'omega-fabric-395009');
+              dfMessengerElement.setAttribute('agent-id', 'a5923857-7fd9-4bb0-aff6-d571b3d541fb');
+              dfMessengerElement.setAttribute('language-code', 'vi');
+  
+              var chatBubbleElement = document.createElement('df-messenger-chat-bubble');
+              chatBubbleElement.setAttribute('chat-title', 'ResolveMate');
+  
+              dfMessengerElement.appendChild(chatBubbleElement);
+  
+              document.body.appendChild(scriptElement);
+              document.body.appendChild(dfMessengerElement);
+  
+              var styleElement = document.createElement('style');
+              styleElement.textContent = `
+                  df-messenger {
+                      z-index: 999;
+                      position: fixed;
+                      bottom: 16px;
+                      right: 16px;
+                  }
+              `;
+  
+              document.head.appendChild(styleElement);
+          }
+      });
+  </script>
       
     </script>
     <script src="script.js"></script>
 </body>
 </html>
+<!-- 
+  Chinh khung 30px
+  Them noi dung huong dan dang nhap su dung chatbot
+  Chinh khung news sat ben trai
+  Them favicon
+  SUA TIENG ANH VE TIENG VIET
+  LAM FEEDBACK
+  CHINH KHUNG HEADER 
+  SUA NAVBAR
+
+
+ -->
