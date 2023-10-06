@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/0c31228caf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>ChatBot | User</title>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 </head>
 <body>
 
@@ -16,7 +17,7 @@
     </a>
     <div>
         <ul id="navbar">
-            <li><a class="active" href="/UIT-DS-WEB/index.html">Home</a></li>
+            <li><a class="active" href="/index.html">Home</a></li>
             <li><a href="chatbot.html">Chat bot </a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -35,7 +36,7 @@
     <section class="msger" style="background-color: #181818;">
 
         <main class="msger-chat">
-          <!-- <div class="msg left-msg">
+          <div class="msg left-msg">
             <div
              class="msg-img"
              style="background-image: url(bot.png)"
@@ -65,21 +66,15 @@
                 Hello
               </div>
             </div>
-          </div> -->
+          </div>
+ 
 
-          <div class="container">
-            <img src="assets/cat.png">
-            <input type="text" id="input-field" placeholder="Milk">
-            <button id="add-button">Add to cart</button>
-            <ul id="shopping-list">
-            </ul>
-        </div>
-        <script src="index.js" type="module"></script>
+        <!-- <script src="index.js" type="module"></script>
         <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
         <df-messenger
         location="asia-southeast1"
         agent-id="94d2781f-ae8c-430e-bc14-73e4d6ff5286"
-        language-code="vi">
+        language-code="vi"  >
         <df-messenger-chat-bubble
         chat-title="ResolveMate"
         bot-writing-text="..."
@@ -89,17 +84,64 @@
         <style>
         df-messenger {
             z-index: 999;
-            position: fixed;
-            bottom: 16px;
-            right: 16px;
+            position: flex;
+            bottom: 50%;
+            right: 50%;
+            justify-content: center;
+
         }
-        </style>
+        </style> 
         </main> 
       </section>
         <form class="msger-inputarea">
           <input type="text" class="msger-input" placeholder="Enter your message...">
           <button type="submit" class="msger-send-btn"><i class="fa fa-paper-plane"></i></button>
-        </form>
+        </form> -->
+          <style>
+
+            .chatbot-container {
+                position: relative;
+                height: 500px; /* Đặt chiều cao mong muốn cho class cha */
+            }
+
+            df-messenger {
+                z-index: 999;
+                position: absolute;
+                bottom: 16px;
+                right: 16px;
+                left: 16px;
+                top: 16px;
+                transition: all 0.3s ease-in-out; /* Thêm hiệu ứng chuyển đổi mượt mà */
+            }
+
+            .expanded {
+                width: 100% !important;
+                height: 100% !important;
+                bottom: 0;
+                right: 0;
+            }
+        </style>
+
+        <div class="chatbot-container">
+            <df-messenger
+                location="asia-southeast1"
+                agent-id="94d2781f-ae8c-430e-bc14-73e4d6ff5286"
+                language-code="vi"
+                chat-title="ResolveMate"
+                bot-writing-text="..."
+                placeholder-text="PLACEHOLDER_TEXT"
+                onclick="expandChatbot()">
+            </df-messenger>
+        </div>
+
+        <script>
+            function expandChatbot() {
+                const chatbot = document.querySelector('df-messenger');
+                chatbot.style.width = '100%';
+                chatbot.style.height = '100%';
+                chatbot.classList.add('expanded');
+            }
+        </script>
       
 
       <script src="main.js"></script>

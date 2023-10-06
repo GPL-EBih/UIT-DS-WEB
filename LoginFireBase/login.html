@@ -21,14 +21,14 @@
 <body>
 
     <div class="mb-5">
-        <h3 class="mb-3">Sign up</h3>
+        <h3 class="mb-3">Log in</h3>
         <input type="text" placeholder="Username" id="userInp" class="form-control mb-3">
         <input type="password" placeholder="Password" id="passInp" class="form-control mb-3">
         <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch1">
             <label class="custom-control-label" for="customSwitch1">Keep me Logged In</label>
         </div>
-        <button type="text" id="sub_btn" class="btn w-100 btn-outline-primary mb -3"> Sign up</button>
+        <button type="text" id="sub_btn" class="btn w-100 btn-outline-primary mb -3"> Log in</button>
         <div class="" id="loginGoogle">
             <button class="btn w-100 btn-outline-primary mb -3">
                 Log in with Google+
@@ -112,12 +112,12 @@
             let keepLoggedIn = document.getElementById('customSwitch1').checked;
             if(!keepLoggedIn){
                 sessionStorage.setItem('user', JSON.stringify(user));
-                window.location ="home.html";
+                window.location ="/index.html";
             }
             else{
                 localStorage.setItem('keepLoggedIn', 'yes');
                 localStorage.setItem('user', JSON.stringify(user));
-                window.location= "home.html";
+                window.location= "/index.html";
             }
         }  
         //Assign the event
@@ -132,6 +132,8 @@
         const auth = getAuth(app);
 
         loginGoogle.addEventListener('click',(e)=>{
+            localStorage.clear();
+            sessionStorage.clear();
             signInWithRedirect(auth, provider);
 
             getRedirectResult(auth)

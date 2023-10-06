@@ -70,6 +70,11 @@ const alternative = [
   "I'm listening...",
   "I don't understand :/ I don't understand :/I don't understand :/I don't understand :/I don't understand :/ "
 ]
+
+
+
+
+
 const robot = ["How do you do, fellow human", "I am not a bot"];
 msgerForm.addEventListener("submit", event => {
   event.preventDefault();
@@ -148,3 +153,80 @@ function formatDate(date) {
 function random(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
+
+// const msgerForm = get('.msger-inputarea');
+// const msgerInput = get('.msger-input');
+// const msgerChat = get('.msger-chat');
+// const BOT_IMG = 'bot.png';
+// const PERSON_IMG = 'user.png';
+// const BOT_NAME = 'BOT';
+// const PERSON_NAME = 'User';
+// const projectId = 'test-9api';
+// const sessionId = '123';
+// const languageCode = 'vi';
+
+// const apiUrl = `https://dialogflow.googleapis.com/v2/projects/${projectId}/agent/sessions/${sessionId}:detectIntent`;
+
+// msgerForm.addEventListener('submit', event => {
+//   event.preventDefault();
+//   const msgText = msgerInput.value;
+//   if (!msgText) return;
+//   msgerInput.value = '';
+//   addChat(PERSON_NAME, PERSON_IMG, 'right', msgText);
+//   detectIntent(msgText);
+// });
+
+// function detectIntent(message) {
+//   const request = {
+//     queryInput: {
+//       text: {
+//         text: message,
+//         languageCode: languageCode,
+//       },
+//     },
+//   };
+
+//   fetch(apiUrl, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//       'Authorization': 'https://oauth2.googleapis.com/token',
+//     },
+//     body: JSON.stringify(request),
+//   })
+//     .then(response => response.json())
+//     .then(data => {
+//       const fulfillmentText = data.queryResult.fulfillmentText;
+//       addChat(BOT_NAME, BOT_IMG, 'left', fulfillmentText);
+//     })
+//     .catch(error => {
+//       console.error('Error:', error);
+//     });
+// }
+
+// function addChat(name, img, side, text) {
+//   const msgHTML = `
+//     <div class="msg ${side}-msg">
+//       <div class="msg-img" style="background-image: url(${img})"></div>
+//       <div class="msg-bubble">
+//         <div class="msg-info">
+//           <div class="msg-info-name">${name}</div>
+//           <div class="msg-info-time">${formatDate(new Date())}</div>
+//         </div>
+//         <div class="msg-text">${text}</div>
+//       </div>
+//     </div>
+//   `;
+//   msgerChat.insertAdjacentHTML('beforeend', msgHTML);
+//   msgerChat.scrollTop += 500;
+// }
+
+// function get(selector, root = document) {
+//   return root.querySelector(selector);
+// }
+
+// function formatDate(date) {
+//   const h = '0' + date.getHours();
+//   const m = '0' + date.getMinutes();
+//   return `${h.slice(-2)}:${m.slice(-2)}`;
+// }
