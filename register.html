@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDL GANG - Resolve Mate</title>
+    <!-- Favicon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="mb-5">
+        <h3 class="mb-3">Register</h3>
+        <input type="text" placeholder="Fullname" id="nameInp" class="form-control mb-3">
+        <input type="text" placeholder="Email" id="emailInp" class="form-control mb-3">
+        <input type="text" placeholder="Username" id="userInp" class="form-control mb-3">
+        <input type="password" placeholder="Password" id="passInp" class="form-control mb-3">
+        <button type="text" id="sub_btn" class="btn w-100 btn-outline-primary mb -3"> Sign up</button>
+        <a href="login.html" class="badge badge-secondary py-1 w-100">Already Have An Account?</a>
+        
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+        
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        // const firebaseConfig = {
+        //   apiKey: "AIzaSyDapH6ck-s3TQ154taWCz8EWQHS3ZQ3Gr8",
+        //   authDomain: "uitweb-5c26c.firebaseapp.com",
+        //   databaseURL: "https://uitweb-5c26c-default-rtdb.firebaseio.com",
+        //   projectId: "uitweb-5c26c",
+        //   storageBucket: "uitweb-5c26c.appspot.com",
+        //   messagingSenderId: "488733525168",
+        //   appId: "1:488733525168:web:a56bcf9ba83e63c8f9e775",
+        //   measurementId: "G-Q608ZEJ2R8"
+        // };
+
+        const firebaseConfig = {
+  apiKey: "AIzaSyASw7spw8ERA47ilifZ1jQI9gUToiEOhNc",
+  authDomain: "omega-fabric-395009.firebaseapp.com",
+  databaseURL: "https://omega-fabric-395009-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "omega-fabric-395009",
+  storageBucket: "omega-fabric-395009.appspot.com",
+  messagingSenderId: "72019822114",
+  appId: "1:72019822114:web:254ce0ab677ef74a6fec7b",
+  measurementId: "G-8KD4S03JDS"
+};
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        import {getDatabase, ref, set, child, get}
+            from 'https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js';
+
+        const db = getDatabase();
+
+        // The REFERENCES
+        const name = document.getElementById('nameInp');
+        const email = document.getElementById('emailInp');
+        const username = document.getElementById('userInp');
+        const pass = document.getElementById('passInp');
+        const submit = document.getElementById('sub_btn');
+
+        //VALIDATION
+
+        function isEmptyOrSpaces(str){
+            return str == null || str.match(/^ *$/) !== null;
+        }
+        
+        function Validation(){
+            let nameregex = /^[a-zA-Z\s]+$/;
+            let emailregex = /^[a-zA-Z0-9]+@(gmail|yahoo|outlook)\.com$/;
+            let userregex = /^[a-zA-Z0-9]{5,}$/;
+
+            if (isEmptyOrSpaces(name.value) || isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value)
+            || isEmptyOrSpaces(pass.value)){
+                alert("you cannot left any field empty");
+                return false;
+            }
+
+            if(!nameregex.test(name.value)){
+                alert("the name should only contain alphabets");
+                return false;
+            }
+
+            if(!emailregex.test(email.value)){
+                alert("enter a valid email");
+                return false;
+            }
+
+            if(!userregex.test(username.value)){
+                alert("-username can only be alphanumeric\n -username must be aleast 5 chacracters\n -username cannot contain special characters");
+                return false;
+            }
+            return true;
+
+        }
+
+        //REGISTER USER TO FIREBASE
+        function RegisterUser(){
+            if(!Validation()){
+                return;
+            };
+            const dbRef = ref(db);
+            get(child(dbRef,"UsersList/"+ username.value)).then((snapshot)=>{
+                if(snapshot.exists()){
+                    alert("Account Already Exist!");
+                }
+                else{
+                    set(ref(db,"Userslist/"+ username.value),
+                    {
+                        fullname: name.value,
+                        email: email.value,
+                        username: username.value,
+                        password: encPass()
+                    })
+                    .then(()=>{
+                        alert("user added successfully");
+                    })
+                    .catch((error)=>{
+                        alert("error" + error);
+                    })
+                }
+            });
+        }
+
+        //ENCRIPTION 
+        function encPass(){
+            var pass12 = CryptoJS.AES.encrypt(pass.value, pass.value);
+            return pass12.toString();
+        }
+
+        //Assign the event
+        submit.addEventListener('click', RegisterUser);
+        
+
+
+
+
+
+
+
+      </script>
+</body>
+</html>

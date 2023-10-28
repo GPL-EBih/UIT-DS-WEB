@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KDL GANG - Resolve Mate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="image/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <script src="https://kit.fontawesome.com/0c31228caf.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, New York, USA</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary"></i>Resolve Mate</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <!-- <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="feature.html" class="dropdown-item">Feature</a>
+                        <a href="team.html" class="dropdown-item">Our Doctor</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                <a id="userlink" class="nav-item nav-link active" href="">Username</a>
+                <a id="singoutlink" class="nav-item nav-link active" href="">Sign Out</a>
+            </div>
+            
+            
+        </div>
+    </nav>
+
+
+
+
+
+    
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid header bg-primary p-0 mb-5">
+        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-4 text-white mb-5">RESOLVE MATE</h1>
+                <div class="display-5 text-white mb-2">
+                    <!-- <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">123</h2>
+                            <p class="text-light mb-0">Expert Doctors</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">1234</h2>
+                            <p class="text-light mb-0">Medical Stuff</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">12345</h2>
+                            <p class="text-light mb-0">Total Patients</p>
+                        </div>
+                    </div> -->
+                    Chào mừng bạn đến với trang web của chúng tôi!
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="image/robot/1.png" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">ĐƠN GIẢN</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="image/robot/2.png" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">TIỆN LỢI</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="image/robot/4.png" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">ĐA NĂNG</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="image/robot/3.png" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="image/robot/3.png" alt="" style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" style="text-align: justify;" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Về chúng tôi</p>
+                    <h1 class="mb-4">Tại sao bạn nên tin tưởng chúng tôi?</h1>
+                    <p>Chúng tôi tự hào giới thiệu một chatbot thông minh, sẵn sàng hỗ trợ bạn trong việc báo cáo khiếu nại. Với sự trợ giúp của chatbot, quá trình báo cáo khiếu nại của bạn sẽ trở nên nhanh chóng, thuận tiện và hiệu quả hơn bao giờ hết.</p>
+                    <p class="mb-4">Chatbot của chúng tôi được thiết kế để làm việc 24/7, sẵn sàng lắng nghe và giải quyết mọi khiếu nại mà bạn gặp phải. Bạn có thể đặt câu hỏi, cung cấp thông tin chi tiết về khiếu nại của bạn và nhận được hướng dẫn rõ ràng và tức thì từ chatbot.</p>
+                    <p class="mb-4">Chúng tôi cam kết đảm bảo tính bảo mật và hiệu quả trong việc xử lý thông tin của bạn. Chatbot của chúng tôi sẽ giúp bạn tiết kiệm thời gian và nỗ lực trong việc báo cáo khiếu nại, đồng thời mang lại sự tiện lợi và sự hài lòng cho bạn.</p>
+                    <p class="mb-4">Hãy trải nghiệm chatbot của chúng tôi ngay bây giờ để trải qua một trải nghiệm mới và tiện ích trong việc báo cáo khiếu nại. Chúng tôi luôn sẵn lòng hỗ trợ bạn và đảm bảo rằng mọi khiếu nại của bạn được giải quyết một cách nhanh chóng và chính xác.</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Đơn giản</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Tiện lợi</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Đa năng</p>
+                    <a id="started" class="btn btn-primary rounded-pill py-3 px-5 mt-3" >Bắt đầu sử dụng thôi nào</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Tổng quan</p>
+                        <h1 class="text-white mb-4">Resolve Mate</h1>
+                        <p class="text-white mb-4 pb-2"></p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-user-md text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Đa năng</p>
+                                        <h5 class="text-white mb-0">Thân thiện</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-check text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Chất lượng</p>
+                                        <h5 class="text-white mb-0">Dịch vụ</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-comment-medical text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Tích cực</p>
+                                        <h5 class="text-white mb-0">Hội thoại</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-headphones text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">24 Hours</p>
+                                        <h5 class="text-white mb-0">Hỗ trợ</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="image/robot/chatbot1.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; ">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Tính năng</p>
+                <h1>Các robot trò chuyện của chúng tôi sử dụng công nghệ trí tuệ nhân tạo mới nhất để hiểu và đáp ứng các yêu cầu của khách hàng, mang lại sự hỗ trợ chính xác và hiệu quả.
+                </h1>
+            </div>
+            <div class="row g-4" style="text-align: justify;">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa-regular fa-clock text-primary fs-4"></i>
+                        </div> -->
+                        <h4 class="mb-3">Tiết kiệm thời gian</h4>
+                        <p class="mb-4">Chatbot giúp bạn tiết kiệm thời gian quý báu khi báo cáo khiếu nại. Thay vì phải gọi điện thoại, viết email hoặc đến trực tiếp để báo cáo khiếu nại, bạn chỉ cần trò chuyện với chatbot một cách nhanh chóng và tiện lợi.</p>
+                        <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa-regular fa-bolt-lightning text-primary fs-4"></i>
+                        </div> -->
+                        <h4 class="mb-3">Tính tức thì</h4>
+                        <p class="mb-4">Chatbot đáp ứng ngay lập tức và cung cấp hướng dẫn tức thì. Bạn không cần phải chờ đợi lâu để nhận được câu trả lời hoặc hướng dẫn, giúp bạn tiếp cận giải pháp nhanh chóng.</p>
+                        <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-brain text-primary fs-4"></i>
+                        </div> -->
+                        <h4 class="mb-3">Tính đơn giản</h4>
+                        <p class="mb-4">Chatbot được thiết kế để đơn giản và dễ sử dụng. Bạn không cần có kiến thức kỹ thuật đặc biệt hay kinh nghiệm trước đây để tương tác với chatbot. Nó đáp ứng tự nhiên và dễ dàng hiểu câu hỏi và yêu cầu của bạn.</p>
+                        <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa-regular fa-globe text-primary fs-4"></i>
+                        </div> -->
+                        <h4 class="mb-3">Tính đa ngôn ngữ</h4>
+                        <p class="mb-4">Chatbot có khả năng hỗ trợ đa ngôn ngữ, giúp bạn giao tiếp một cách thuận tiện bằng ngôn ngữ mà bạn thoải mái sử dụng.</p>
+                        <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-tooth text-primary fs-4"></i>
+                        </div> -->
+                        <h4 class="mb-3">Tính linh hoạt</h4>
+                        <p class="mb-4">Chatbot có thể được truy cập từ bất kỳ thiết bị nào có kết nối internet, bao gồm cả máy tính, điện thoại di động và máy tính bảng. Điều này cho phép bạn sử dụng chatbot bất cứ khi nào và ở bất kỳ đâu bạn muốn.</p>
+                        <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-vials text-primary fs-4"></i>
+                        </div> -->
+                        <h4 class="mb-3">Tính bảo mật</h4>
+                        <p class="mb-4">Chatbot đảm bảo tính bảo mật của thông tin cá nhân và khiếu nại của bạn. Dữ liệu được xử lý một cách an toàn và tuân thủ các quy định bảo mật hiện hành.</p>
+                        <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
+                <h1>Our Experience Doctors</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Doctor Name</h5>
+                            <p class="text-primary">Department</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Doctor Name</h5>
+                            <p class="text-primary">Department</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Doctor Name</h5>
+                            <p class="text-primary">Department</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Doctor Name</h5>
+                            <p class="text-primary">Department</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Appointment Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Appointment</p>
+                    <h1 class="mb-4">Make An Appointment To Visit Our Doctor</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Call Us Now</p>
+                            <h5 class="mb-0">+012 345 6789</h5>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Mail Us Now</p>
+                            <h5 class="mb-0">info@example.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Choose Doctor</option>
+                                        <option value="1">Doctor 1</option>
+                                        <option value="2">Doctor 2</option>
+                                        <option value="3">Doctor 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 datetimepicker-input"
+                                            placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 datetimepicker-input"
+                                            placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" rows="5" placeholder="Describe your problem"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Appointment End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Công nghệ</p>
+                <h1>Các kỹ thuật mà chúng tôi áp dụng cho chatbot</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="image/icon/nanotechnology.png" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Trí tuệ Nhân tạo (AI) đề cập đến việc mô phỏng trí tuệ con người trong các máy được lập trình để suy nghĩ và học tập giống như con người. Đây là một nhánh của khoa học máy tính nhằm tạo ra các máy thông minh có khả năng thực hiện các nhiệm vụ thường yêu cầu trí tuệ con người.</p>
+                        <h5 class="mb-1">Website</h5>
+                        <!-- <span class="fst-italic">Profession</span> -->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="image/icon/project-management.png" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>AI bao gồm nhiều lĩnh vực con như học máy, xử lý ngôn ngữ tự nhiên, thị giác máy tính và robot. Với sự tiến bộ trong AI, máy móc có thể phân tích dữ liệu, nhận biết mẫu, đưa ra quyết định và thậm chí tương tác với con người một cách tự nhiên và giống con người.</p>
+                        <h5 class="mb-1">Học máy</h5>
+                        <!-- <span class="fst-italic">Profession</span> -->
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="image/icon/responsive.png" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>AI đã cách mạng hóa nhiều ngành công nghiệp và lĩnh vực, bao gồm y tế, tài chính, giao thông vận tải và giải trí. Trong lĩnh vực y tế, các thuật toán AI có thể hỗ trợ chẩn đoán bệnh, dự đoán kết quả cho bệnh nhân và tìm ra phương pháp điều trị mới.</p>
+                        <h5 class="mb-1">Cách mạng</h5>
+                        <!-- <span class="fst-italic">Profession</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <!-- <div class="row g-4"> -->
+                <!-- <div class="col-lg-3 col-md-6"> -->
+                    <h5 class="text-light mb-3">Liên hệ</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>HCMUS</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+84) 963425495</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i> nguyenngocthanh13022003@gmail.com</p>
+                    <!-- <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                <!-- </div> -->
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Dịch vụ</h5>
+                    <a class="btn btn-link" href="">Hội thoại</a>
+                    <a class="btn btn-link" href="">Báo cáo</a>
+                    <a class="btn btn-link" href="">Tìm hiểu</a>
+              
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        </div>
+        <!-- <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- Footer End -->
+    <!-- Code login -->
+    <script>
+        // REFERENCES
+        let userlink = document.getElementById('userlink');
+        let signoutlink = document.getElementById('singoutlink');
+        let header = document.getElementById('hh');
+        var currentUser = null;
+      
+        // FUNCTIONS
+        function getUsername() {
+
+          let keepLoggedIn = localStorage.getItem("keepLoggedIn");
+      
+          if (keepLoggedIn == "yes") {
+            currentUser = JSON.parse(localStorage.getItem('user'));
+          } else {
+            currentUser = JSON.parse(sessionStorage.getItem('user'));
+          }
+        }
+      
+        function Signout() {
+          sessionStorage.removeItem('user');
+          localStorage.removeItem('user');
+          localStorage.removeItem('keepLoggedIn');
+          window.location = "./index.html";
+          sessionStorage.clear();
+        }
+        
+
+
+
+        // WINDOW LOADS
+        window.onload = function () {
+          getUsername();
+      
+          if (currentUser == null) {
+            userlink.innerText = "Create New Account";
+            // userlink.classList.replace("nav-link", "btn");
+            // userlink.classList.add("btn-primary");
+            userlink.href = "register.html";
+      
+            signoutlink.innerText = "Login";
+            // signoutlink.classList.replace("nav-link", "btn");
+            // signoutlink.classList.add("btn-success");
+            signoutlink.href = "login.html";
+
+            started.href = "login.html"
+            
+
+          } else {
+            userlink.innerText = currentUser.username;
+           
+            // userlink.classList.replace("btn", "nav-link");
+            // userlink.classList.add("btn-primary");
+            userlink.href = "#";
+      
+            signoutlink.innerText = "Sign Out";
+            // signoutlink.classList.replace("btn", "nav-link");
+            // signoutlink.classList.add("btn-success");
+            signoutlink.setAttribute('onclick', 'Signout()');
+
+            started.href = "#"
+          }
+        };
+      </script>
+    <!-- Chat bot -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var keepLoggedIn = sessionStorage.getItem('user');
+    
+            if (keepLoggedIn !== null) {
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js';
+    
+                var dfMessengerElement = document.createElement('df-messenger');
+                dfMessengerElement.setAttribute('location', 'asia-southeast1');
+                dfMessengerElement.setAttribute('project-id', 'omega-fabric-395009');
+                dfMessengerElement.setAttribute('agent-id', 'a5923857-7fd9-4bb0-aff6-d571b3d541fb');
+                dfMessengerElement.setAttribute('language-code', 'vi');
+    
+                var chatBubbleElement = document.createElement('df-messenger-chat-bubble');
+                chatBubbleElement.setAttribute('chat-title', 'Resolve Mate');
+    
+                dfMessengerElement.appendChild(chatBubbleElement);
+    
+                document.body.appendChild(scriptElement);
+                document.body.appendChild(dfMessengerElement);
+    
+                var styleElement = document.createElement('style');
+                styleElement.textContent = `
+                    df-messenger {
+                        z-index: 999;
+                        position: fixed;
+                        bottom: 16px;
+                        right: 16px;
+                    }
+                `;
+                document.head.appendChild(styleElement);
+
+            }
+        });
+    </script>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" style="left: 0;"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
